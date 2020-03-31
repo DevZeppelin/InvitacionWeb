@@ -1,0 +1,590 @@
+/*FF304C*/
+
+body{
+    /*siempre es bueno poner el margin 0 al principio para quitar los amrgenes que vienen por defecto que nos ocupan lugar al dope*/
+    margin: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+body p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .contenedor{
+/*los estilos van por niveles. me va a plicar estilo al contenedor que este en el header*/
+    display: flex;
+    /*este va sobre el elemento PADRE. por eso va sobre el contenedor.*/
+    justify-content: space-between;
+    /*justificame el contenido a los espacios. tambein podria poner center, o flex-start para qe vaya a la izquierda*/
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+#contenedor-titulo-flex{
+/*como es un solo div queda bien pero si fueran 2 div o una lista de ul quedarian simplemente uno al lado del otro*/
+    display: flex;
+    justify-content: center;
+
+    /*viewport height es el alto de la ventana. le digo q me baje el 18% de la ventana.
+    y el 0? los amrgenes van en sentido del reloj: top right bottom left.
+    lo que hice es igual a :
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18vh;
+    margin-left: 0px;*/
+        
+        max-width: 1500px;
+        width: 100%;
+}
+
+header {
+    /*el linear-gradient es genial para sobreponer colores con transparencia a la imagen. yo no lo voy a usar por ahora. 
+    
+        background: linear-gradient(rgba(52,183,191, .9), rgba(95,175,180, .9)), url(imagenes/fondo.jpg);
+    */
+    background: url(imagenes/fondo.jpg);
+
+    /*esto significa 100% el alto de la pantalla. esto es muy importante para qu funcione bien en moviles*/
+    height: 100vh;
+    
+    /*esto adapta el tamaño al ancho de mi pantalla. es genial*/
+    background-size: cover;
+  
+
+}
+
+h1 {
+    
+    padding-top: 45px;
+    font-family: 'Parisienne', cursive;
+    font-size: 90px;
+    color: #FFF;
+    text-align: center;
+    margin: 0px;
+    /* Para bordes: -webkit-text-stroke: 0.01px black;*/
+    
+    
+    
+    
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    
+    font-size: 40px;
+    color: #FF304C;
+    text-align: center;
+    margin-bottom: 90px;
+    margin-top: -20px;
+    
+    
+}
+
+.contenedor-titulo {
+    text-align: center;
+}
+
+
+
+#top-id p {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #FF304C;
+    text-align: center;
+    margin-top: 130px;
+   }
+
+ #countdown {
+   
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #FF304C;
+    text-align: center;
+
+
+   }
+
+
+/*-------------------AQUIII BOTONES!!!---------------------*/
+/*aca agrego todos los botones para que tengan el mismo estilo, desps si quiero modificar uno lo modifico aparte*/
+.contenedor-titulo a, #informacion a, #historia a, #confirmar a, #regalos a {
+
+    font-size: 14px;
+    color: #fff;
+    background: #FF304C;
+    padding: 14px 24px;
+    /*el padding es iguial que el margin. top right bottom left. por eso puse 2 ejes y me lo acomodo*/
+    text-align: center;
+    width: 128px;
+    border-radius: 6px;
+
+    /*hay elementos en linea y elementos de bloque. el elemento A es de LINEA. por eso no se alinea simplemente con un text-align. por eso le tengo que pponer inline-block. para alinear al centro le pongo la prop al contenedor-titulo*/
+    display: inline-block;
+    margin-bottom: 20px;
+   
+}
+
+
+
+/*.........................SECCION DE "INFO"..................*/
+
+h3 {
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    /*margin-top: 100px;    */
+}
+
+
+
+#informacion .contenedor-informacion  {
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#informacion .texto {
+    
+    width: 42%;
+}
+
+
+#informacion .item {
+
+    width: 48%;
+    text-align: center;
+    
+
+}
+
+#informacion ul {
+    list-style: none;
+}
+
+/*aqui llamo al elemento hijo n°2. li es hijo de ul. el 1 seria la imagen . el 2 velocidad. y el 3 el parrafo. tmb puedo usar first-child o last-child*/
+#informacion ul li:nth-child(2){
+
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 0 40px;
+}
+
+#informacion ul li:nth-child(3){
+
+    line-height: 31px;
+}
+
+
+
+/*.........................SECCION FOTOGRAFIA.....................*/
+
+button.owl-prev, button.owl-next {
+
+    font-size: 40px !important;
+    }
+
+span {
+    /*SPAN es una etiqueta HTML q no tienen ningun significado semantico, es solamente para poner un elemento en una etiqueta y darle estilos*/
+    color: #fa4848;
+}
+
+.item p {
+
+    text-align: center;
+}
+
+
+#fotografia img {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+   
+}
+
+
+/*.........................TESTIGOS.............................*/
+
+.contenedor-testigos {
+
+    display: flex;
+    /*el wrap era x si los elementos ocupan mucho lugar pasan a la otra línea*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#testigos .item {
+
+    width: 28%;
+    text-align: center;
+    
+
+}
+
+#testigos ul {
+    list-style: none;
+}
+
+/*aqui llamo al elemento hijo n°2. li es hijo de ul. el 1 seria la imagen . el 2 velocidad. y el 3 el parrafo. tmb puedo usar first-child o last-child*/
+#testigos ul li:nth-child(2){
+
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#testigos ul li:nth-child(3){
+
+    line-height: 31px;
+}
+
+#testigos img{
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#testigos .item h3 {
+    font-size: 36px;
+}
+
+
+
+/*...............................SECCION historia....................................*/
+
+#historia{
+    background: linear-gradient(#FF304C, rgb(196, 119, 105));
+    text-align: center;
+    /*aqui le pongo 50px de espacio arriba y abajo. 0 a los costados*/
+    padding: 50px 0;
+    margin-top: 40px;
+    }
+
+    
+#historia h4{
+    font-size: 23px;
+    color: #FFF;
+    /*para darle estilo al boton vuelvo al que configure mas arriba e incluyo este nuevo ;)*/
+}
+
+
+#confirmar a {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#regalos img {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#regalos a {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#confirmar img {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+}
+
+#codigo {
+    padding-top: 80px;
+}
+
+#codigo img {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+  
+}
+
+#codigo p {
+    text-align: center;
+}
+
+
+  .contacto-info {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+
+  }
+
+  .contacto-info img {
+    width: 28px;
+    /*el vertical align me alinea la foto con el texto apra que no queda cada unoa rriba del otro o desalineado*/
+    vertical-align: middle;
+    /*con margin-right: separo la imagen del texto;*/
+    margin-right: 10px;
+  }
+
+
+
+
+   /*.........................FOOTER..................*/
+
+
+   footer {
+
+    background: #FF304C;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 80px;
+   }
+
+   footer .contenedor {
+
+    display: flex;
+    justify-content: center;
+    /*este por defecto vienen en raw, por eso se pone uno al lado del otro. si lo pongo en columna pone uno abajo del otro*/
+    flex-direction: column;
+   }
+
+   footer img {
+    margin: 0 40px;
+    transform: rotate(0);
+    /*en la rotacion necesito definir primero el grado por defecto, luego en el :hover cuanto quiero que rote, y luego la transition que es el tiempo en el defect y en el hover. deg es grados en ingles*/
+    transition: 0.4s;
+
+   }
+
+   footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+
+   }
+
+   footer p {
+       color: #fff;
+       margin-top: 40px;
+   }
+
+   /*.....................COUNTDOWN.............................*/
+
+
+   
+
+   
+   /*..............estilo htm................*/
+
+   html {
+       /*este es la animaciopn de cndo hago scroll por el documento*/
+       scroll-behavior: smooth;
+   }
+
+   /*dando padding a las secciones para que cuando cliqueo en el link se vea el titulo y no se tape*/
+
+   #informacion, #servicios, #fotografia, #testigos, #blog, #contacto {
+
+    padding: 70px 0;
+   }
+
+
+   /*.............................IMPORTANTISIMA PARTE DEL RESPONSIVE DESIGN..........................*/
+
+   
+   
+   
+   /*en el medio que se va a ver esta pag sera con un ancho maximo de 800 px (suficiente para tablets como para fonos) si es solo para celus le ponemos 480px. */
+   @media (max-width: 800px) {
+   
+
+    
+
+    
+
+    header h1 {
+            margin-top: 50px;
+            font-size: 55px;
+            margin-bottom: 20px;
+            padding-bottom: 35px;
+            
+    }
+    
+
+    h2 {
+        font-size: 24px;
+        color: #FF304C;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 45px;
+    }
+
+    #top-id p{
+        margin-top: 20px;
+    }
+
+
+    .contenedor-titulo h2 {
+        font-size: 30px;
+    }
+
+
+    .ceremonia-religiosa {
+        margin-bottom: 50px;
+    }
+
+    #informacion .contenedor-informacion {
+        
+        flex-direction: column;
+        
+    }
+
+    
+    #informacion .texto {
+        width: 98%;
+        text-align: center;
+    }
+
+    #informacion .item {
+        width: 98%;
+        text-align: center;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+
+
+    .contenedor-testigos {
+
+        flex-direction: column;
+    }
+
+    #testigos .item {
+        width: 100%;
+        }
+
+    #testigos .item li img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .item ul {
+        padding: 0;
+    }
+
+  
+
+    footer img {
+        margin: 24px;
+    }
+
+
+    .contacto-info {
+        flex-direction: column;
+    }
+/*
+    .contenedor-titulo h1 {
+        -webkit-text-stroke: 0.01cm white;
+        color: rgb(0, 65, 161);
+
+    }*/
+
+  }
+
+/*AHORA LO VAMOS A CONFIGURAR PARA IPAD Y TABLETS*/
+/*al ponerle un miniom me aseguro que no va a ser un celular*/
+@media (min-width: 600px) and (max-width: 800px) {
+
+    header {
+        height: 70vh;
+    }
+
+    header h1 {
+        margin-bottom: 213px;
+        font-size: 90px;
+    }
+
+    .contenedor-servicios {
+
+        width: 500px;
+        /*margin auto para centrarlo*/
+        margin: auto;
+    }
+
+    .contenedor-publicaciones {
+
+        width: 70%;
+        margin: auto;
+    }
+
+
+
+  }
+
+
+
+  @media (max-width: 330px) {
+
+    
+
+    header h1 {
+        font-size: 44px;
+        margin-bottom: 25px;
+        padding-bottom: 35px;
+        color: #fa4848;
+        
+    }
+
+    .contenedor-titulo h2 {
+
+        font-size: 22px;
+        color: #FFF;
+    }
+
+    #countdown {
+        font-size: 26px;
+    }
+
+    #whatsapp img {
+
+        width: 30px;
+        height: 30px;
+        top: 86%;
+    }
+
+    #sobre-mi img {
+
+        height: 250px;
+    }
+
+    .lista-menu li {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+}
+  
