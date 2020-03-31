@@ -8,7 +8,7 @@ body{
 
 body p {
     font-size: 22px;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 
 header .contenedor{
@@ -67,12 +67,14 @@ header {
 h1 {
     
     padding-top: 45px;
-    font-family: 'Parisienne', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 90px;
-    color: #FFF;
+    color: #FF304C;
     text-align: center;
     margin: 0px;
+    margin-bottom: 15px;
     /* Para bordes: -webkit-text-stroke: 0.01px black;*/
+    font-weight: normal;
     
     
     
@@ -83,10 +85,11 @@ h2 {
     font-family: 'Lobster Two', cursive;
     
     font-size: 40px;
-    color: #FF304C;
+    color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 90px;
-    margin-top: -20px;
+    margin-bottom: 42px;
+    margin-top: -10px;
+    font-weight: normal;
     
     
 }
@@ -98,18 +101,18 @@ h2 {
 
 
 #top-id p {
-    font-family: 'Sacramento', cursive;
-    font-size: 40px;
-    color: #FF304C;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 34px;
+    color: rgb(235, 151, 151);
     text-align: center;
     margin-top: 130px;
    }
 
  #countdown {
    
-    font-family: 'Sacramento', cursive;
-    font-size: 40px;
-    color: #FF304C;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 34px;
+    color: rgb(235, 151, 151);
     text-align: center;
 
 
@@ -143,7 +146,7 @@ h3 {
     font-family: 'Lobster Two', cursive;
     text-align: center;
     font-size: 55px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     /*margin-top: 100px;    */
 }
 
@@ -179,7 +182,7 @@ h3 {
 /*aqui llamo al elemento hijo n°2. li es hijo de ul. el 1 seria la imagen . el 2 velocidad. y el 3 el parrafo. tmb puedo usar first-child o last-child*/
 #informacion ul li:nth-child(2){
 
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 19px;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -323,8 +326,29 @@ span {
 
 #codigo p {
     text-align: center;
+    font-size: 26px;
 }
 
+#instagram {
+    padding-top: 80px;
+}
+
+#instagram img {
+    display: block;
+    margin: auto;
+    margin-bottom: 80px;
+  
+}
+
+#instagram p {
+    text-align: center;
+}
+
+#instagram a {
+    font-size: 26px;
+    color: #FF304C;
+    
+}
 
   .contacto-info {
 
@@ -413,13 +437,16 @@ span {
    @media (max-width: 800px) {
    
 
-    
+    #countdown {
+        font-size: 22px;
+        padding: 0 10px;
+    }    
 
     
 
     header h1 {
             margin-top: 50px;
-            font-size: 55px;
+            font-size: 66px;
             margin-bottom: 20px;
             padding-bottom: 35px;
             
@@ -428,8 +455,9 @@ span {
 
     h2 {
         font-size: 24px;
-        color: #FF304C;
-        margin-bottom: 10px;
+        color: #fff;
+        margin-bottom: 38px;
+        padding: 0 10px;
     }
 
     h3 {
@@ -547,7 +575,7 @@ span {
     
 
     header h1 {
-        font-size: 44px;
+        font-size: 56px;
         margin-bottom: 25px;
         padding-bottom: 35px;
         color: #fa4848;
@@ -561,7 +589,7 @@ span {
     }
 
     #countdown {
-        font-size: 26px;
+        font-size: 18px;
     }
 
     #whatsapp img {
