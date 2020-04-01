@@ -404,7 +404,8 @@ span {
 
    footer p {
        color: #fff;
-       margin-top: 40px;
+       margin-top: 18px;
+       font-size: 18px;
    }
 
    /*.....................datos-bancariios.............................*/
@@ -533,7 +534,7 @@ span {
   
 
     footer img {
-        margin: 24px;
+        margin: 18px;
     }
 
 
@@ -617,6 +618,10 @@ span {
 
     .lista-menu li {
         font-size: 14px;
+    }
+
+    footer p {
+        font-size: 16px;
     }
 
 
