@@ -51,7 +51,7 @@
                             <ul>
                                 <li><img src="imagenes/icon/iglesia.png"></li>
                                 <li><p> La ceremonia se realizará el Sábado 1 de noviembre a las 19hs en la Parroquia San José Obrero, Gutierrez, Maipú</p></li>
-                                <li><a href="https://goo.gl/maps/LMw1XhKXGddZxEoG8">Como llegar</a></li>
+                                <li><a href="https://goo.gl/maps/9Cg2EmfCoSWYrXs56">Como llegar</a></li>
                             </ul>
                         </div>
 
@@ -59,7 +59,7 @@
                         <ul>
                             <li> <img src="imagenes/icon/fiesta.png"></li>
                             <li><p>La fiesta se realizará en Paseo Paddle, de Maipú, a las 21hs. Es muy importante que confirmes tu asistencia.</p></li>
-                            <li><a href="https://goo.gl/maps/Ej5bJ1CWFZfyKPJW9">Como llegar</a></li>
+                            <li><a href="https://goo.gl/maps/j2fCPXXBFbFMoXZp9">Como llegar</a></li>
                             <li><a href="#confirmar">Confirmar asistencia</a></li>
                         </ul>
                        
@@ -203,10 +203,23 @@
                 <h3>Regalos</h3>
                 <img src="imagenes/icon/gift.png">
 
-                <a href="">Lista en Garbarino</a>
+                <a href="https://listas.garbarino.com/buscar">Lista en Garbarino</a>
+                
+                <div class="datos-bancarios">
+                <a>Datos bancarios</a>
 
-                <a href="">Datos bancarios</a>
-                                
+                <nav>
+                    <ul class="lista-datos">
+                        <li><strong>TITULAR</strong>:   Gino Bruno Pietrobon</li>
+                        <li><strong>CBU</strong>:   000234208700000634861451</li>
+                        <li><strong>ALIAS</strong>:   MADRID.TITULO.YOGURTH</li>
+                        <li><strong>CUENTA</strong>:   4-26548-2154</li>
+                        <li><strong>BANCO</strong>:   Provincia</li>
+                    </ul>
+                </nav>
+
+                </div>     
+                
                 </div>
             </div>
 
@@ -220,12 +233,13 @@
                 <h3>Confirmar asistencia</h3> 
                 <img src="imagenes/icon/ok.png">
 
-                <a href="">Confirmar al novio</a>
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5492616708100">Confirmar al novio</a>
 
-                <a href="">Confirmar a la novia</a>
+                <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5492634732012">Confirmar a la novia</a>
                                 
                 </div>
             </div>
+           
 
         </section>
 
@@ -283,7 +297,6 @@
         </div>
 
     </footer>
-    
 
 
     <script
@@ -347,6 +360,35 @@
     
         timer = setInterval(showRemaining, 1000);
     </script>
+
+<script>
+    //cuando el documento este listo aplicame esta funcion:
+    $(document).ready(function(){
+
+    //en jquery tiene que estar dentro del ready x eso va aca
+    //RESPONSIVE DESIGN ANIMACION MENU
+
+    $('.datos-bancarios a').click(function(){
+        //SlideDown baja el menu, SlideUp levanta el menu, SlideToggle es una combinacion
+        $(".lista-datos").css({"display":"block"});
+        
+        })
+
+        $('.datos-bancarios a').dblclick(function(){
+            $(".lista-datos").css({"display":"none"});
+
+
+    })
+
+    //$('.menu a').click(function(){
+      //  $('header nav').slideUp();
+
+    //})
+
+    })
+
+</script>
+
 
 
 </body>

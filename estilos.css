@@ -407,7 +407,18 @@ span {
        margin-top: 40px;
    }
 
-   /*.....................COUNTDOWN.............................*/
+   /*.....................datos-bancariios.............................*/
+
+   .lista-datos {
+       display: none;
+   }
+
+   .lista-datos {
+        text-align: center;
+        list-style: none;
+        font-size: 22px;
+
+   }
 
 
    
