@@ -1,10 +1,17 @@
-/*FF304C*/
+/*paleta
+#22223b
+#4a4e69
+#9a8c98
+#c9ada7
+#f2e9e4
+
+*/
 
 body{
     /*siempre es bueno poner el margin 0 al principio para quitar los amrgenes que vienen por defecto que nos ocupan lugar al dope*/
     margin: 0;
     font-family: 'Baloo Chettan 2', cursive;
-    background-color: rgb(245, 209, 176);
+    background-color: #c9ada7;
 }
 
 body p {
@@ -70,7 +77,7 @@ h1 {
     padding-top: 45px;
     font-family: 'Great Vibes', cursive;
     font-size: 90px;
-    color: #FF304C;
+    color: #22223b;
     text-align: center;
     margin: 0px;
     margin-bottom: 15px;
@@ -86,7 +93,7 @@ h2 {
     font-family: 'Lobster Two', cursive;
     
     font-size: 40px;
-    color: rgb(250, 234, 218);
+    color: #4a4e69;
     text-align: center;
     margin-bottom: 42px;
     margin-top: -10px;
@@ -104,7 +111,7 @@ h2 {
 #top-id p {
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 34px;
-    color: rgb(245, 209, 176);
+    color: #f2e9e4;
     text-align: center;
     margin-top: 130px;
    }
@@ -113,7 +120,7 @@ h2 {
    
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 34px;
-    color: rgb(245, 209, 176);
+    color: #f2e9e4;
     text-align: center;
 
 
@@ -125,8 +132,8 @@ h2 {
 .contenedor-titulo a, #informacion a, #historia a, #confirmar a, #regalos a {
 
     font-size: 14px;
-    color: #fff;
-    background: #FF304C;
+    color: #c9ada7;
+    background: #22223b;
     padding: 14px 24px;
     /*el padding es iguial que el margin. top right bottom left. por eso puse 2 ejes y me lo acomodo*/
     text-align: center;
@@ -147,6 +154,7 @@ h3 {
     font-family: 'Lobster Two', cursive;
     text-align: center;
     font-size: 55px;
+    color: #22223b;
     /*font-weight: bold;*/
     /*margin-top: 100px;    */
 }
@@ -203,7 +211,7 @@ button.owl-prev, button.owl-next {
 
 span {
     /*SPAN es una etiqueta HTML q no tienen ningun significado semantico, es solamente para poner un elemento en una etiqueta y darle estilos*/
-    color: #fa4848;
+    color: #4a4e69;
 }
 
 .item p {
@@ -274,7 +282,7 @@ span {
 /*...............................SECCION historia....................................*/
 
 #historia{
-    background: linear-gradient(#FF304C, rgb(245, 209, 176));
+    background: linear-gradient(#22223b, #c9ada7);
     text-align: center;
     /*aqui le pongo 50px de espacio arriba y abajo. 0 a los costados*/
     padding: 50px 0;
@@ -284,7 +292,7 @@ span {
     
 #historia h4{
     font-size: 23px;
-    color: #FFF;
+    color: #c9ada7;
     /*para darle estilo al boton vuelvo al que configure mas arriba e incluyo este nuevo ;)*/
 }
 
@@ -346,7 +354,7 @@ span {
 
 #instagram a {
     font-size: 26px;
-    color: #FF304C;
+    color: #22223b;
     
 }
 
@@ -374,7 +382,7 @@ span {
 
    footer {
 
-    background: #FF304C;
+    background: #22223b;
     padding: 40px 0;
     text-align: center;
     margin-top: 80px;
@@ -403,7 +411,7 @@ span {
    }
 
    footer p {
-       color: #fff;
+       color: #c9ada7;
        margin-top: 18px;
        font-size: 18px;
    }
@@ -467,7 +475,7 @@ span {
 
     h2 {
         font-size: 24px;
-        color: #fff;
+        color: #c9ada7;
         margin-bottom: 38px;
         padding: 0 10px;
     }
@@ -590,14 +598,14 @@ span {
         font-size: 56px;
         margin-bottom: 25px;
         padding-bottom: 35px;
-        color: #fa4848;
+        color: #22223b;
         
     }
 
     .contenedor-titulo h2 {
 
         font-size: 22px;
-        color: #FFF;
+        color: #c9ada7;
     }
 
     #countdown {
