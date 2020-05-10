@@ -604,9 +604,9 @@ span {
    
 
     .container-all {
-        position: initial; 
-        max-width: 2000px;
-        width: 237%;
+        position: absolute; 
+        max-width: 100%;
+        width: 100%;
         height: 100%;
         border-radius: 6px;
         overflow: hidden;
