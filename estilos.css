@@ -287,10 +287,10 @@ h3 {
 #informacion .contenedor-informacion  {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 #informacion .texto {
@@ -342,11 +342,15 @@ span {
     text-align: center;
 }
 
+.item {
+    padding: 15px;
+}
 
 #fotografia img {
     display: block;
     margin: auto;
     margin-bottom: 40px;
+    
    
 }
 
@@ -571,6 +575,26 @@ span {
    }
 
 
+
+
+
+   /*--------------------------------HOVERS-------------------------------*/
+
+
+   
+.owl-carousel img:hover {
+   
+    transform: scale(1.12);
+    box-shadow: 4px 4px 10px #22223b;
+    
+}
+
+#testigos .foto:hover {
+    transform: scale(1.14);
+
+}
+
+
    /*.............................IMPORTANTISIMA PARTE DEL RESPONSIVE DESIGN..........................*/
 
    
@@ -580,7 +604,7 @@ span {
    @media (max-width: 800px) {
 
     @keyframes autoplay {
-        2%{
+        0%{
             transform: translate3d(calc(-100% * 0.5), 0, 0); 
         }
     
@@ -607,7 +631,7 @@ span {
         position: relative; 
         max-width: 100%;
         width: 100%;
-        height: 630px;
+        height: 705px;
         border-radius: 6px;
         overflow: hidden;
         z-index: 1;
@@ -692,8 +716,8 @@ span {
         }
 
     #testigos .item li img {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
     }
 
     .item ul {
