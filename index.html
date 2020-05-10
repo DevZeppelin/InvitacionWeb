@@ -23,8 +23,61 @@
 <body>
     
     <header  id="top-id">
+        
+        
+
+        <div class="container-all body" >
+            <!--el hiddene s un atributo que oculta.-->
+            <input type="radio" id="1" name="image-slide" hidden/>
+            <input type="radio" id="2" name="image-slide" hidden/>
+            <input type="radio" id="3" name="image-slide" hidden/>
+            <input type="radio" id="4" name="image-slide" hidden/>
+    
+            
+            
+              
+            
+            <div class="slide">
+
                 
-        <div class="contenedor" id="contenedor-titulo-flex">
+                
+                <div class="item-slide">
+                    <img src="img/1.jpg">
+                </div>
+    
+                <div class="item-slide">
+                    <img src="img/2.jpg"> 
+                </div>
+    
+                <div class="item-slide">
+                    <img src="img/3.jpg">
+                </div>
+
+                <div class="item-slide">
+                    <img src="img/4.jpg">
+                </div>
+    
+            </div>
+
+           
+    
+            <div class="pagination">
+
+                <div class="texto-fijo">
+                    <h1>¡Nos casamos!</h1>
+                    <h2>¡y queremos que seas parte de este día inolvidable!</h2>     
+                    <a href="#informacion">Ver información</a>        
+                    <p>Faltan: <div id="countdown"></div> </p>           
+                   
+                </div> 
+    
+            </div>
+
+            
+        </div>    
+                
+        <!--
+            <div class="contenedor" id="contenedor-titulo-flex">
             <div class="contenedor-titulo">
                 <h1>¡Nos casamos!</h1>
                 <h2>¡y queremos que seas parte de este día inolvidable!</h2>
@@ -37,6 +90,9 @@
               
             </div>
         </div>
+        -->
+
+       
 
     </header>
 
@@ -49,7 +105,7 @@
                   
                         <div class="ceremonia-religiosa item">
                             <ul>
-                                <li><img src="imagenes/icon/iglesia.png"></li>
+                                <li><img class="icon" src="imagenes/icon/iglesia.png"></li>
                                 <li><p> La ceremonia se realizará el Sábado 1 de noviembre a las 19hs en la Parroquia San José Obrero, Gutierrez, Maipú</p></li>
                                 <li><a href="https://goo.gl/maps/9Cg2EmfCoSWYrXs56">Como llegar</a></li>
                             </ul>
@@ -57,7 +113,7 @@
 
                     <div class="ceremonia-fiesta item">
                         <ul>
-                            <li> <img src="imagenes/icon/fiesta.png"></li>
+                            <li> <img class="icon" src="imagenes/icon/fiesta.png"></li>
                             <li><p>La fiesta se realizará en Paseo Paddle, de Maipú, a las 21hs. Es muy importante que confirmes tu asistencia.</p></li>
                             <li><a href="https://goo.gl/maps/j2fCPXXBFbFMoXZp9">Como llegar</a></li>
                             <li><a href="#confirmar">Confirmar asistencia</a></li>
@@ -92,7 +148,7 @@
             <div class="contenedor">
                 
                 <h3>Luego de miles de besos...</h3>
-                <img src="imagenes/icon/corazon.png">
+                <img class="icon" src="imagenes/icon/corazon.png">
 
                 <div class="owl-carousel owl-theme">
                     <div class="item"><img src="imagenes/fotos/foto01.jpg"></div>
@@ -123,7 +179,7 @@
                 
 
                 <h3>Testigos de la novia</h3>
-                <img src="imagenes/icon/testigos.png">
+                <img class="icon" src="imagenes/icon/testigos.png">
                 <div class="contenedor-testigos novia">
 
                    
@@ -158,7 +214,7 @@
                 
 
                 <h3>Testigos del novio</h3>
-                <img src="imagenes/icon/testigos.png">
+                <img class="icon" src="imagenes/icon/testigos.png">
                 <div class="contenedor-testigos novio">
 
                     
@@ -201,7 +257,7 @@
             <div class="contenedor">
                 <div class="contenedor-regalos">
                 <h3>Regalos</h3>
-                <img src="imagenes/icon/gift.png">
+                <img class="icon" src="imagenes/icon/gift.png">
 
                 <a href="https://listas.garbarino.com/buscar">Lista en Garbarino</a>
                 
@@ -231,7 +287,7 @@
             <div class="contenedor">
                 <div class="contenedor-confirmar">
                 <h3>Confirmar asistencia</h3> 
-                <img src="imagenes/icon/ok.png">
+                <img class="icon" src="imagenes/icon/ok.png">
 
                 <a id="whatsapp" href="https://api.whatsapp.com/send?phone=5492616708100">Confirmar al novio</a>
 
@@ -247,7 +303,7 @@
             <div class="contenedor">
                 <div class="contenedor-codigo">
                 <h3>Código de vestimenta</h3> 
-                <img src="imagenes/icon/dress-code.png">
+                <img class="icon" src="imagenes/icon/dress-code.png">
 
                 <p>Formal</p>
                 </div>
@@ -259,7 +315,7 @@
             <div class="contenedor">
                 <div class="contenedor-instagram">
                 <h3>¡Seguí la fiesta en las redes!</h3> 
-                <img src="imagenes/icon/instagram.png">
+                <img class="icon" src="imagenes/icon/instagram.png">
 
                 <p>¡Usando el hashtag <a href="http://instagram.com/#AniYGino">#AniYGino</a> subí las fotos y videos que vayas sacando así no nos perdemos de nada!</p>
                 </div>
