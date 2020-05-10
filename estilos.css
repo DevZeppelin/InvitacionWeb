@@ -645,7 +645,8 @@ span {
     }
 
     #top-id p{
-        margin-top: 20px;
+        margin-top: 0px;
+        font-size: 20px;
     }
 
 
