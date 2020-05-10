@@ -218,7 +218,7 @@ h2 {
     margin-bottom: 150px;
     margin-top: -10px;
     font-weight: normal;
-    text-shadow: 0px 0px 10px #f2e9e4;
+    text-shadow: 0px 0px 10px #22223b;
     
     
 }
@@ -234,8 +234,8 @@ h2 {
     font-size: 34px;
     color: #f2e9e4;
     text-align: center;    
-    text-shadow: 0px 0px 5px #22223b;
-   }
+    text-shadow: 2px 2px 4px #22223b;
+    }
 
  #countdown {
    
@@ -243,7 +243,7 @@ h2 {
     font-size: 34px;
     color: #f2e9e4;
     text-align: center;
-    text-shadow: 0px 0px 5px #22223b;
+    text-shadow: 2px 2px 4px #22223b;
    
 
 
